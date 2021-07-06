@@ -1,0 +1,19 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0b0b;
+}
+
+.plots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.plots__map {
+  width: 100%;
+  height: 60%;
+}

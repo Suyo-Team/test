@@ -1,0 +1,136 @@
+.auth {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #254b61, #0b0f15 70%);
+}
+
+.auth__container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.auth__container button {
+  background-color: #09313f;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 45px;
+  outline: 0;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.auth__container button:hover {
+  background-color: #09313f9e;
+}
+
+.login,
+.register,
+.auth__menu {
+  height: 70%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__container,
+.register__container,
+.auth__menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login__container h1,
+.register__container h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.login__container-form,
+.register__container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+}
+
+.login__container-form input,
+.register__container-form input {
+  width: 100%;
+  height: 45px;
+  outline: 0;
+  background-color: #000;
+  margin-bottom: 20px;
+  padding: 0px 15px;
+  color: #aaa;
+}
+
+.login__container-form input::placeholder,
+.register__container-form input::placeholder {
+  color: #aaa;
+}
+
+.auth__menu {
+  position: absolute;
+  transition: 
+    left 1s ease,
+    background-color 1s ease-in-out,
+    border-top-left-radius 2s ease,
+    border-top-right-radius 2s ease;
+  z-index: 100;
+}
+
+.auth__menu.left {
+  background-color: #0c3848;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  left: 0;
+}
+
+.auth__menu.right {
+  background-color: #031e28;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  left: 45%;
+}
+
+.auth__menu-container h1 {
+  color: #ddd;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.auth__menu-container p {
+  margin-bottom: 40px;
+  color: #3e616d;
+}
+
+.auth__menu-container button {
+  width: 40%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.auth__menu.right button:hover {
+  background-color: #09313f;
+}
+
+.auth__menu.left button:hover {
+  background-color: #09313f;
+}

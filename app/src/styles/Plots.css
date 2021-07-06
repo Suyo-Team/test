@@ -1,0 +1,60 @@
+.plots__container {
+  height: calc(40% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plots__container h1 {
+  color: #42c790;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.plots__container p {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.plots__container-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.plots__container-form label {
+  color: #42c790;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0 auto 5px;
+}
+
+.plots__container-form input {
+  margin: 10px 0;
+  padding: 6px 15px;
+  border-radius: 5px;
+  display: block;
+  outline: 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.plots__container-form button {
+  margin: 10px auto;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 2px solid #42c790;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #42c790;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.plots__container-form button:hover {
+  background-color: #42c79022;
+}

@@ -1,0 +1,28 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 65px);
+  background: linear-gradient(to top, #aaaaaa 50%, #dddddd 50%);
+}
+
+.notfound__content {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.notfound__content h1 {
+  font-size: 10em;
+}
+
+.notfound__content h2 {
+  font-size: 3em;
+}
+
+.notfound__content h3 {
+  margin-top: 20px;
+  font-size: 25px;
+}
