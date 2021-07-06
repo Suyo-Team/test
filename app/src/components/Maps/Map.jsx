@@ -14,7 +14,7 @@ const center = {
 
 const Map = ({ plots }) => {
   const { isLoaded, loadError } = useJsApiLoader({
-    googleMapsApiKey: 'AIzaSyDODLwbcfIZ9-W3Lw0ky0hAVjBYdRZAms8',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
   const mapRef = useRef();
   const [selected, setSelected] = useState(null);
