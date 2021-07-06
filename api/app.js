@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static('../app/build'));
 
-const PORT = 3006;
+const PORT = process.env.PORT || 3006;
 
 app.use('/api/users', usersRouter);
 app.use('/api/plots', plotsRouter);
