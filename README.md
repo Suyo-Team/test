@@ -8,8 +8,6 @@ Localización de Predios
 - Debe tener un buscador el mapa
 
 ## Backend
-*Backend, usar en éste test:
-
 Applicación:
 Python - Django, Django Rest Framework
 
