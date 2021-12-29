@@ -8,8 +8,8 @@ Localización de Predios
 - Debe tener un buscador el mapa
 
 *Utilizar cualquiera de las siguientes tecnologías
-React JS
 Python
+React JS
 Javascript puro
 
 *Puede utilizar cualquier librería de visualización de mapas donde la pueda integrar.
@@ -17,9 +17,7 @@ Javascript puro
 
 Backend, usar en éste test:
 Applicación:
-Python - Bonus*
-Node
-firebase or similar
+Python - Django
 
 *Envío de prueba.
 Plataforma:
