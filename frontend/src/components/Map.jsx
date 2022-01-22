@@ -20,7 +20,7 @@ function Map(props) {
     <>
       <div style={{ height: "70vh", width: "100%" }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyAey55fYGQoNvZjwQ7TiAQyWqEy66oZ5-M" }}
+          bootstrapURLKeys={{ key: "" }}
           defaultCenter={location}
           defaultZoom={zoomLevel}
           onClick={hanleClick}>
