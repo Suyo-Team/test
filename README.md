@@ -1,5 +1,19 @@
 # Usuario DEMO
 
+Demo user: suyo@suyo.com
+Demo password: suyo1234
+
+# Fronted
+
+https://suyoapp.vercel.app/
+https://github.com/failedname/suyoapp
+
+# API Backend
+
+Django
+Django rest framework
+Posgresql
+
 # Prueba
 
 Localización de Predios
