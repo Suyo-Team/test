@@ -1,3 +1,5 @@
+# Usuario DEMO
+
 # Prueba
 
 Localización de Predios
@@ -8,11 +10,15 @@ Localización de Predios
 - Debe tener un buscador el mapa
 
 ## Backend
+
 Applicación:
+
 - Python - Django, Django Rest Framework
 
-## Frontend 
-*Utilizar cualquiera de las siguientes tecnologías para el frontend
+## Frontend
+
+\*Utilizar cualquiera de las siguientes tecnologías para el frontend
+
 - Python
 - React JS
 - Javascript puro
@@ -20,4 +26,5 @@ Applicación:
 - Angular
 
 ## Visor
+
 Puede utilizar cualquier librería de visualización de mapas donde la pueda integrar.
