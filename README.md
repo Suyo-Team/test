@@ -3,7 +3,7 @@
 Demo user: suyo@suyo.com
 Demo password: suyo1234
 
-# Fronted
+# Frontend
 
 https://suyoapp.vercel.app/
 
