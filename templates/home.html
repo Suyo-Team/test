@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load l10n %}
+
+{% block titulo %}
+    Home
+{% endblock %}
+
+{% block styles %}
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+{% endblock %}
+
+{% block contenido %}
+<div id='map' style='width: 1200px; height: 800px;'></div>
+{% endblock %}
+{% block scripts %}
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css" type="text/css">
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2FuYWxjbGltYSIsImEiOiJja3lweWNqd2EwZWx2Mm5qanpuY3puczZ1In0.2jzZaooa7Kxp4Vh0hVghhA';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.99, 5.62],
+        zoom: 5, // starting zoom
+    });
+    {% if estado %}
+        {% for predio in predios %}
+            const marker{{ predio.id }} = new mapboxgl.Marker()
+                .setLngLat([{{predio.longitud|unlocalize}}, {{ predio.latidud|unlocalize }}])
+                .setPopup(new mapboxgl.Popup({offset: 25}).setHTML("<a href='predio/datelles/{{ predio.id }}'>{{ predio.nombre }}</a>"))
+                .addTo(map);
+        {% endfor %}
+
+    {% endif %}
+    map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl
+        })
+    );
+</script>
+{% endblock %}

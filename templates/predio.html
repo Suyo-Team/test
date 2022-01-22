@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    Detalles Predio
+{% endblock %}
+
+{% block contenido %}
+    <h1 class="mt-5">Predio: {{ predio.nombre }}</h1>
+
+    <table class="table">
+  <thead>
+    <tr>
+        <th scope="col">Propietario</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Dirección</th>
+        <th scope="col">Coordenadas</th>
+        <th scope="col">Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+      <td>{{ predio.nombre }}</td>
+      <td>{{ predio.propietario }}</td>
+      <td>{{ predio.direccion }}</td>
+      <td>{{ predio.latidud }}, {{ predio.longitud }}</td>
+      <td>
+          <a href="{% url 'editar-predio' predio.id %}" class="btn btn-warning">Editar</a>
+          <a href="{% url 'eliminar_predio' predio.id %}" class="btn btn-danger">Eliminar</a>
+      </td>
+      </tr>
+  </tbody>
+</table>
+{% endblock %}
