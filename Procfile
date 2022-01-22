@@ -1,0 +1,1 @@
+web: gunicorn suyo.wsgi --log-file -
